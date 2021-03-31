@@ -16,6 +16,7 @@
 ## About The Project
 
 Custom portfolio site. - [View Live Site](https://jordandavila.com)
+
 A list of commonly used resources that I find helpful are listed on the acknowledgements section.
 
 ### Built With
