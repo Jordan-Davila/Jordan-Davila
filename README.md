@@ -1,6 +1,3 @@
-<!-- PROJECT SHIELDS -->
-[![MIT License][license-shield]][license-url]
-
 <!-- TABLE OF CONTENTS -->
 
 ## Table of Contents
@@ -17,8 +14,6 @@
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
-
-[![Terribooks][product-screenshot]](https://terribooks.com)
 
 Custom portfolio site. - [View Live Site](https://jordandavila.com)
 A list of commonly used resources that I find helpful are listed on the acknowledgements section.
