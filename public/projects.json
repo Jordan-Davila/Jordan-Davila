@@ -1,0 +1,141 @@
+[
+    {
+        "name": "Terribooks",
+        "slug": "terribooks",
+        "year": "2020 - 2021",
+        "tags": ["laravel", "inertia.js", "vue", "tailwind"],
+        "description": "A free open-source Territory Management System. designed to help jw congregations manage and maintain a well organize territory system.",
+        "links": [
+			{
+				"name": "View Site",
+				"tag": "production",
+				"classColor": "red",
+				"url": "https://terribooks.com/"
+			},
+			{
+				"name": "View Project Files",
+				"tag": "github",
+				"classColor": "",
+				"url": "https://github.com/Jordan-Davila/terribooks"
+			}
+		],
+        "image_path": "terribooks",
+        "images": ["01.png","02.png","03.png","04.png","05.png","06.png","07.png"]
+    },
+    {
+        "name": "SaludoLatino",
+        "slug": "saludolatino",
+        "year": "2019",
+        "tags": ["laravel", "spa", "vue", "tailwind"],
+        "description": "A work in progress project developed to provide services similar to cameo.com. The only difference is that it was designed for more spanish speaking users and celebrities.",
+        "links": [
+			{
+				"name": "View Site",
+				"tag": "production",
+				"classColor": "red",
+				"url": "https://saludolatino.jordandavila.com/"
+			},
+			{
+				"name": "View Project Files",
+				"tag": "github",
+				"classColor": "",
+				"url": "https://github.com/Jordan-Davila/saludolatino"
+			}
+		],
+        "image_path": "saludolatino",
+        "images": ["01.png","02.png","03.png","04.png","05.png"]
+    },
+    {
+        "name": "XYCC LMS",
+        "slug": "xycc-lms",
+        "year": "2018",
+        "tags": ["php", "mvc", "javascript"],
+        "description": "A free open-source online Learning Management System (LMS). Designed to help educators manage effective online courses, post assignements for students and keep track of their grades. Uses an API to communicate with its Mobile App. Developed for College Capstone Project.",
+        "links": [
+			{
+				"name": "View Demo Site",
+				"tag": "demo",
+				"classColor": "red",
+				"url": "https://xycc.jordandavila.com/"
+			},
+			{
+				"name": "View Project Files",
+				"tag": "github",
+				"classColor": "",
+				"url": "https://github.com/Jordan-Davila/xycc"
+			}
+		],
+        "image_path": "xycc-lms",
+        "images": ["01.jpg","02.jpg","03.jpg","04.jpg","05.jpg","06.jpg","07.jpg"]
+    },
+    {
+        "name": "Reward.Me",
+        "slug": "reward-me",
+        "year": "2018",
+        "tags": ["laravel", "php", "javascript"],
+        "description": "A colored-pencil fanart sketch from the series Code Geass, character C.2.",
+        "links": [
+			{
+				"name": "View Demo Site",
+				"tag": "demo",
+				"classColor": "red",
+				"url": "https://rewardme.jordandavila.com"
+			},
+			{
+				"name": "View Project Files",
+				"tag": "github",
+				"classColor": "",
+				"url": "https://github.com/Jordan-Davila/reward.me"
+			}
+		],
+        "image_path": "reward-me",
+        "images": ["01.jpg","02.jpg","03.jpg","04.jpg"]
+    },
+    {
+        "name": "Even Monkeys Count",
+        "slug": "even-monkeys-count",
+        "year": "2018",
+        "tags": ["C#", "Unity3D", "IOS", "Android"],
+        "links": [
+			{
+				"name": "View on App Store",
+				"tag": "ios",
+				"classColor": "red",
+				"url": "https://itunes.apple.com/us/app/even-monkeys-count/id1450755670"
+			},
+			{
+				"name": "View On Play Store",
+				"tag": "android",
+				"classColor": "",
+				"url": "https://play.google.com/store/apps/details?id=com.nyanku.evenmonkeyscount"
+			}
+		],
+		"description":
+			"Even Monkeys Count is a beautifully addicting minimalist puzzle game, which will keep you entertained for hours. The goal is simple: Connect a sequence of numbers to make a bigger number. Easy, isn’t it? Well, 79.56% of the players can reach to number 9 in the first game, but only 0.56% of them can reach 13 or beyond!",
+        "image_path": "even-monkeys-count",
+        "images": ["01.png"]
+    },
+    {
+        "name": "Blocky Skies",
+        "slug": "blocky-skies",
+        "year": "2018",
+        "tags": ["C#", "Unity3D", "IOS", "Android"],
+        "links": [
+			{
+				"name": "View on App Store",
+				"tag": "ios",
+				"classColor": "red",
+				"url": "https://itunes.apple.com/us/app/blocky-skies/id1287630601"
+			},
+			{
+				"name": "View On Play Store",
+				"tag": "android",
+				"classColor": "",
+				"url": "https://play.google.com/store/apps/details?id=com.nyanku.blockyskies"
+			}
+		],
+		"description": "Dodge Barriers, Collect Gold Coins and get the Highest Score. Take to the skies for an endless arcade game. Its fun, furious and very addictive! Collect Gold Coins and Unlock all themes and maps.",
+        "image_path": "blocky-skies",
+        "images": ["01.png"]
+    }
+]
