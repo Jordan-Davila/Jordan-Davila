@@ -2,14 +2,6 @@
     width: 100%;
     height: 100%;
     overflow-y: scroll;
-    --root-color-bg: $color-white !important;
-
-   @at-root {
-        html {
-            font-size: 16pt;
-            line-height: 1.5
-        }
-   }
 
    article {
         padding: 1em;

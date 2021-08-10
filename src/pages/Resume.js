@@ -8,6 +8,9 @@ class Resume extends Component {
 	}
 
     componentDidMount() {
+        let root = document.documentElement;
+        root.style.setProperty("--root-html-font-size", '16pt');
+        root.style.setProperty("--root-html-line-height", '1.5');
         const readmePath = require("../assets/resume.md");
 
         fetch(readmePath)
