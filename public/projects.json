@@ -73,7 +73,7 @@
         "slug": "reward-me",
         "year": "2018",
         "tags": ["laravel", "php", "javascript"],
-        "description": "A colored-pencil fanart sketch from the series Code Geass, character C.2.",
+        "description": "Web application concept developed to challenge users into adopting healthy habits and activities into their daily lives.",
         "links": [
 			{
 				"name": "View Demo Site",

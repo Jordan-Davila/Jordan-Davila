@@ -1,0 +1,112 @@
+.error {
+	.title {
+		margin-bottom: 8vw;
+		h1 {
+            -webkit-transition: letter-spacing .8s cubic-bezier(.77,0,.175,1);
+                    transition: letter-spacing .8s cubic-bezier(.77,0,.175,1);
+			font-family: "CondorCompressed", sans-serif;
+			font-size: 11.5vw;
+			line-height: 0.9em;
+			font-weight: 700;
+			color: $color-red;
+            margin-bottom: 8vw;
+            will-change: letter-spacing;
+
+            &:hover {
+                letter-spacing: .03em
+            }
+
+			@media #{$medium} {
+				font-size:16vw
+			}
+		}
+
+        .wrap {
+			@media #{$medium} {
+				flex: 0 50%;
+				transform: translateX(0vw);
+			}
+
+			@media #{$small} {
+				flex: 1;
+			}
+
+			a {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                font-family: CondorCompressed,sans-serif;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 1rem;
+                color: $color-red;
+
+                &:hover {
+                    -webkit-transform: translate(0)!important;
+                    transform: translate(0)!important;
+                    opacity: 1
+                }
+
+                .label {
+                    -webkit-transition: letter-spacing .8s cubic-bezier(.77,0,.175,1);
+                    transition: letter-spacing .8s cubic-bezier(.77,0,.175,1);
+                    font-size: 1.3rem;
+                    line-height: 1em;
+                    will-change: letter-spacing;
+
+                    &:hover {
+                        letter-spacing: .03em
+                    }
+
+
+                    @media #{$small} {
+                        font-size: 4vw
+                    }
+                }
+
+                .icon-link {
+                    background-image: url('/images/icon-link.svg');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    position: relative;
+                    color: var(--color-titles);
+                    display: inline-block;
+                    width: 1.2vw;
+                    height: 1.2vw;
+                    min-width: 4vw;
+                    margin-left: 1vw;
+                    opacity: 1;
+                    align-self: flex-end;
+
+                    @media #{$small} {
+                        width: 3vw;
+                        height: 3vw;
+                    }
+                }
+
+                .num {
+                    font-size: .8rem;
+                    margin-top: 1.1vw;
+                    margin-left: .25vw;
+                    font-family: CondorCondensed,sans-serif;
+                    -webkit-writing-mode: vertical-rl;
+                    writing-mode: vertical-rl
+                }
+            }
+
+			p {
+				font-size: 1vw;
+				line-height: 1.7em;
+				color: var(--color-paragraphs);
+
+				@media #{$medium} {
+					font-size: 2vw;
+				}
+
+				@media #{$small} {
+					font-size: 4vw;
+				}
+			}
+		}
+	}
+}

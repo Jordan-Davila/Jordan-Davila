@@ -13,7 +13,7 @@ class About extends Component {
 						<h1 dangerouslySetInnerHTML={{__html: window.data.about.title}} />
 					</div>
 					<div className="description">
-						<div class="wrap">
+						<div className="wrap">
 							<p>{window.data.about.description}</p>
 						</div>
 					</div>
@@ -22,9 +22,9 @@ class About extends Component {
                         {/* eslint-disable-next-line array-callback-return */}
                         {window.data.about.experiences.map((exp, index) => {
                                 return <div key={index} className={index === 0 ? "exp current" : "exp"}>
-                                <div key={index} className="name">{exp.job}</div>
-                                <div key={index} className="name">{exp.company}</div>
-                                <div key={index} className="name">{exp.time}</div>
+                                <div className="name">{exp.job}</div>
+                                <div className="name">{exp.company}</div>
+                                <div className="name">{exp.time}</div>
                             </div>
                         })}
 					</div>

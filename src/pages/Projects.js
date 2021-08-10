@@ -26,7 +26,7 @@ class Projects extends Component {
 					<div className="project-info">
 						<h1>{this.state.name}</h1>
 						<section className="info">
-                            <div class="tech">
+                            <div className="tech">
                                 <h2>TECH</h2>
                                 {this.state.tags.map((tag, index) => {
                                     return <h3 key={index}>{tag}</h3>
@@ -41,10 +41,13 @@ class Projects extends Component {
 								<p>{this.state.description}</p>
 							</div>
 						</section>
-                        <section class="links">
+                        <section className="links">
                             {this.state.links.map((link, index) => {
                                 // eslint-disable-next-line react/jsx-no-target-blank
-                                return <a key={index} href={link.url} target="_blank" className={`link ${link.classColor}`}>{link.name}</a>
+                                return <a key={index} href={link.url} target="_blank" className={`link ${link.classColor}`}>
+                                    <div className="label">{link.name}</div>
+                                    <div className="icon-link"></div>
+                                </a>
                             })}
                         </section>
 					</div>

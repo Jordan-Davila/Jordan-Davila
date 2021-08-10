@@ -3,8 +3,8 @@ import ContentContainer from "../components/ContentContainer";
 import Main from "../components/Main";
 import { Link } from "react-router-dom";
 import Nav from "../components/Nav";
-import { Transition, TransitionGroup } from "react-transition-group";
-import { Play, Exit } from "../timelines";
+// import { Transition, TransitionGroup } from "react-transition-group";
+// import { Play, Exit } from "../timelines";
 // import { onTransitionWillStart } from "react-router-page-transition";
 
 class Work extends Component {
@@ -26,7 +26,7 @@ class Work extends Component {
                             return <Link key={index} to={`/projects/${project.slug}`}>
                                 <div className="label">{project.name}</div>
                                 <div className="num">0{index+1}</div>
-                                <i class="icon-link"></i>
+                                <i className="icon-link"></i>
                             </Link>
                     })}
 

@@ -73,6 +73,9 @@
 
 		.links {
 			.link {
+                display: inline-flex;
+                justify-content: flex-start;
+                align-items: flex-start;
 				text-transform: uppercase;
 				font-family: "CondorCondensed", sans-serif;
 				font-size: $font-size-base;
@@ -80,9 +83,57 @@
 				color: $color-lightest;
 				letter-spacing: 1px;
 
-				&.red {
+                @media #{$small} {
+                    &:first-child {
+                        margin-bottom: 2rem;
+                    }
+                }
+
+				&.red .label {
 					color: $color-red;
 				}
+
+                &.red .icon-link {
+					color: $color-red;
+				}
+
+
+                .label {
+                    -webkit-transition: letter-spacing .8s cubic-bezier(.77,0,.175,1);
+                    transition: letter-spacing .8s cubic-bezier(.77,0,.175,1);
+                    font-size: 1.3rem;
+                    line-height: 1em;
+                    will-change: letter-spacing;
+
+                    &:hover {
+                        letter-spacing: .03em
+                    }
+
+
+                    @media #{$small} {
+                        font-size: 4vw
+                    }
+                }
+
+                .icon-link {
+                    background-image: url('/images/icon-link.svg');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    position: relative;
+                    color: $color-lightest;
+                    display: inline-block;
+                    width: 1.2vw;
+                    height: 1.2vw;
+                    min-width: 4vw;
+                    margin-left: 1vw;
+                    opacity: 1;
+                    align-self: flex-end;
+
+                    @media #{$small} {
+                        width: 3vw;
+                        height: 3vw;
+                    }
+                }
 			}
 		}
 	}

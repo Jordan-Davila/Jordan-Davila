@@ -148,6 +148,8 @@
 		}
 
 		a {
+            position: relative;
+            z-index: 2;
 			font-size: 14px;
 			padding: 20px;
 			font-weight: 500;

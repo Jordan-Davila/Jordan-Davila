@@ -8,6 +8,7 @@ class Main extends Component {
 	}
 
 	cursorMouseMove(e) {
+        console.log(e.target.parentNode.tagName.toLowerCase());
 		let isVisible =
 			e.target.parentNode.tagName.toLowerCase() === "a" || e.target.parentNode.className === "label" || e.target.parentNode.className === "types"
 				? false

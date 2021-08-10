@@ -7,8 +7,10 @@
         "title": "<i>I'M JORDAN DAVILA. A <br>DEVELOPER FOCUSED ON<br></i>DIGITAL PRODUCTS &amp; EXPERIENCES",
         "description": "I currently work as a full-stack freelance developer at UpWork. Over the years, I've made quite a few websites through UpWork, everything from small business websites to mid-high volume media websites.",
         "experiences": [
-            {"company": "UpWork", "job": "Full-Stack Web Developer", "time": "Sep 2013 - Present"},
-            {"company": "PCCC", "job": "Computer Science Tutor", "time": "2017 - 2018"}
+            {"company": "Freelance", "job": "Full-Stack Web Developer", "time": "2013 - Present"},
+            {"company": "Microsoft", "job": "Front-End Web Developer", "time": "Jun 2021 - Jul 2021"},
+            {"company": "PCCC", "job": "Computer Science Tutor", "time": "2017 - 2018"},
+            {"company": "WoodPecker's", "job": "Full-Stack Web Developer", "time": "2015 - 2018"}
         ]
     },
     "contacts": {
@@ -19,7 +21,7 @@
     "social": [
         {"name": "GITHUB", "link": "https://github.com/Jordan-Davila/"},
         {"name": "LINKEDIN", "link": "https://linkedin.com/in/jordan-davila/"},
-        {"name": "UPWORK", "link": "https://www.upwork.com/fl/jordandavila"}
+        {"name": "RESUME", "link": "/resume"}
     ],
     "categories": [
         "Featured",
@@ -30,6 +32,5 @@
         "Designs",
         "Sketches",
         "Tutorials"
-
     ]
 }

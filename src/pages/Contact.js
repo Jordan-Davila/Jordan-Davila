@@ -17,7 +17,7 @@ class Contact extends Component {
 						</h1>
 					</div>
 					<div className="description">
-						<div class="wrap">
+						<div className="wrap">
 							<a href={'mailto:' + window.data.contacts.email}>{window.data.contacts.email}</a>
 							<p>
 								{window.data.contacts.message}

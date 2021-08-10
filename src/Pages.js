@@ -3,7 +3,8 @@ import Work from "./pages/Work";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Error404 from "./pages/Error404";
+import Resume from "./pages/Resume";
+import Error from "./pages/Error";
 
 export const Pages = [
 	{
@@ -56,14 +57,24 @@ export const Pages = [
         modelColor: 0xffffff,
 		component: Projects
 	},
-	{
+    {
 		id: 5,
 		isMainMenu: false,
-		name: "Error404",
+		name: "Resume",
+		path: "/resume",
+		params: "",
+		colors: { text: "#2c2a2a", bg: "#ffffff", cursor: "#2c2a2a" },
+        modelColor: 0xffffff,
+		component: Resume
+	},
+	{
+		id: 6,
+		isMainMenu: false,
+		name: "Error",
 		path: "/404",
 		params: "",
-		colors: { text: "#fbfbfb", bg: "#f73c3c", cursor: "#2c2a2a" },
+		colors: { text: "#2c2a2a", bg: "#f2efe8", cursor: "#2c2a2a" },
         modelColor: 0xffffff,
-		component: Error404
+		component: Error
 	}
 ];

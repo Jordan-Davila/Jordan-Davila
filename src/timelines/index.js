@@ -19,7 +19,8 @@ export const Play = (fullPath, node) => {
 	path === "/projects" && (timeline = ProjectsEnterTimeline(node));
 	path === "/about" && (timeline = AboutEnterTimeline(node));
 	path === "/contact" && (timeline = ContactEnterTimeline(node));
-	path === "/404" && (timeline = ProjectsEnterTimeline(node));
+    path === "/resume" && (timeline = ContactEnterTimeline(node));
+	path === "/404" && (timeline = ContactEnterTimeline(node));
 
 	window.loadPromise.then(() => requestAnimationFrame(() => timeline.play()));
 };
@@ -33,7 +34,7 @@ export const Exit = (fullPath, node) => {
 	path === "/projects" && (timeline = ProjectsExitTimeline(node));
 	path === "/about" && (timeline = AboutExitTimeline(node));
 	path === "/contact" && (timeline = ContactExitTimeline(node));
-	path === "/404" && (timeline = ProjectsExitTimeline(node));
+	path === "/404" && (timeline = ContactExitTimeline(node));
 
 	timeline.play();
 };

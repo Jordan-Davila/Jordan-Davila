@@ -28,3 +28,4 @@
     $color-black,
     $color-lightest
 );
+@include generate-color("error", $color-black, $color-black, $color-black, $color-lightest, $color-black);

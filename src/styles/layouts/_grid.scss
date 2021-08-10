@@ -22,7 +22,8 @@ body {
 	&.work,
 	&.projects,
 	&.about,
-	&.contact {
+	&.contact,
+    &.error {
 		grid-template-columns: auto 1fr;
 		grid-template-rows: auto 1fr;
 		grid-template-areas: "nav content";

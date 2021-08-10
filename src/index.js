@@ -6,6 +6,8 @@ import { Route } from "react-router-dom";
 import { Play, Exit } from "./timelines";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+import { Pages } from "./Pages";
+import _ from "lodash";
 
 class Parent extends React.Component {
     constructor(props) {
@@ -21,10 +23,25 @@ class Parent extends React.Component {
         fetch('/data.json').then((r) => r.json())
         .then((json) => {window.data = json;  this.setState({dataIsReturned : true})})
         fetch('/projects.json').then((r) => r.json())
-        .then((json) => {window.projects = json;  this.setState({projectsIsReturned : true})})
+        .then((json) => {
+            window.projects = json;  this.setState({projectsIsReturned : true})
+        })
+    }
+
+    playVerify(pathname, node) {
+        let fullPath = "/" && "/" + pathname.split("/")[1];
+        let page = _.find(Pages, ["path", fullPath]);
+        return page ? Play(page.path, node) : Play('/404', node);
+    }
+
+    exitVerify(pathname, node) {
+        let fullPath = "/" && "/" + pathname.split("/")[1];
+        let page = _.find(Pages, ["path", fullPath]);
+        return page ? Exit(page.path, node) : Play('/404', node);
     }
 
     render() {
+
        return this.state.dataIsReturned && this.state.projectsIsReturned ?
        <BrowserRouter>
        <Route
@@ -34,8 +51,8 @@ class Parent extends React.Component {
                        <Transition
                            key={location.key}
                            appear={true}
-                           onEnter={node => Play(location.pathname, node)}
-                           onExit={node => Exit(location.pathname, node)}
+                           onEnter={node => this.playVerify(location.pathname, node)}
+                           onExit={node => this.exitVerify(location.pathname, node)}
                            timeout={{ enter: 300, exit: 500 }}>
                            <App location={location} />
                        </Transition>
@@ -43,7 +60,8 @@ class Parent extends React.Component {
                );
            }}
        />
-   </BrowserRouter> : <div className="loading"> <h1>Loading Data ...</h1> </div>;
+   </BrowserRouter> :
+   <div className="loading"></div>;
     }
   }
 
