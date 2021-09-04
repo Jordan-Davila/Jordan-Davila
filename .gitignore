@@ -1,17 +1,35 @@
+# System and generated files.
+.DS_Store
+.sass-cache
+
+# Directories.
+/log
+/bower_components
 /node_modules
-/public/hot
-/public/storage
-/public/js
-/public/css
-/storage/*.key
-/vendor
+/.pnp
+.pnp.js
+
+# builds & production
 /build
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
 .env
-.env.backup
-.phpunit.result.cache
-docker-compose.override.yml
-Homestead.json
-Homestead.yaml
-npm-debug.log
-yarn-error.log
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Sketch, Figma, XD design files
+*.sketch
+*.fig
+*.xd
+
+# misc
+.prettierignore
+*.pem
 *.code-workspace

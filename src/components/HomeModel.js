@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 import * as THREE from "three";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
-import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader.js";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
 class HomeModel extends Component {
     componentDidMount() {
@@ -10,13 +7,11 @@ class HomeModel extends Component {
     }
 
     init() {
-        let element = document.getElementById('scene');
+        let element = document.getElementById("scene");
         let renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
         let scene = new THREE.Scene();
-         // Set Renderer
-         renderer.setPixelRatio(
-            element.devicePixelRatio ? element.devicePixelRatio : 1
-        );
+        // Set Renderer
+        renderer.setPixelRatio(element.devicePixelRatio ? element.devicePixelRatio : 1);
         renderer.setSize(element.clientWidth, element.clientHeight);
         renderer.autoClear = false;
         renderer.setClearColor(0x000000, 0.0);
@@ -25,12 +20,7 @@ class HomeModel extends Component {
         let mouse = new THREE.Vector3(); //Needed for mouse coordinates
 
         // Set Camera
-        let camera = new THREE.PerspectiveCamera(
-            75,
-            element.clientWidth / element.clientHeight,
-            1,
-            1000
-        );
+        let camera = new THREE.PerspectiveCamera(75, element.clientWidth / element.clientHeight, 1, 1000);
         camera.position.z = 400;
         scene.add(camera);
 
@@ -61,9 +51,7 @@ class HomeModel extends Component {
         // Set Particle Mesh
         for (let i = 0; i < 400; i++) {
             let mesh = new THREE.Mesh(geometry, material);
-            mesh.position
-                .set(Math.random() - 0.5, Math.random() - 0.5, Math.random() - 0.5)
-                .normalize();
+            mesh.position.set(Math.random() - 0.5, Math.random() - 0.5, Math.random() - 0.5).normalize();
             mesh.position.multiplyScalar(90 + Math.random() * 700);
             mesh.rotation.set(Math.random() * 2, Math.random() * 2, Math.random() * 2);
             particle.add(mesh);
@@ -106,19 +94,18 @@ class HomeModel extends Component {
             renderer.clear();
             // required if controls.enableDamping or controls.autoRotate are set to true
             // this.controls.update();
-            lights[1].color.set(window.color)
+            lights[1].color.set(window.color);
             if (model) {
                 model.traverse((o) => {
-                    if (o.isMesh) o.material = new THREE.MeshPhongMaterial({
-                        color: 0xffffff,
-                        wireframe: true,
-                        side: THREE.DoubleSide,
-                    });
+                    if (o.isMesh)
+                        o.material = new THREE.MeshPhongMaterial({
+                            color: 0xffffff,
+                            wireframe: true,
+                            side: THREE.DoubleSide,
+                        });
                 });
 
-                let q = new THREE.Quaternion().setFromEuler(
-                    new THREE.Euler(mouse.y, mouse.x, 0, "YXZ")
-                );
+                let q = new THREE.Quaternion().setFromEuler(new THREE.Euler(mouse.y, mouse.x, 0, "YXZ"));
                 let newQuaternion = new THREE.Quaternion();
                 THREE.Quaternion.slerp(model.quaternion, q, newQuaternion, 0.07);
 
@@ -128,7 +115,6 @@ class HomeModel extends Component {
             }
             renderer.render(scene, camera);
         };
-
 
         let onDocumentMouseMove = (event) => {
             event.preventDefault();
@@ -146,7 +132,7 @@ class HomeModel extends Component {
         window.addEventListener("resize", onWindowResize, false);
         window.addEventListener("mousemove", onDocumentMouseMove, false);
 
-         // Load Model Scale 16
+        // Load Model Scale 16
         //  let loader = new GLTFLoader();
         //  let dracoloader = new DRACOLoader();
         //  dracoloader.setDecoderPath("/js/libs/draco/");
@@ -162,11 +148,9 @@ class HomeModel extends Component {
         animate();
     }
 
-	render() {
-		return (
-			<div id="scene"></div>
-		);
-	}
+    render() {
+        return <div id="scene"></div>;
+    }
 }
 
 export default HomeModel;
